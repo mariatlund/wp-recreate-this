@@ -1,0 +1,127 @@
+:root {
+  /* style colours */
+  --grey-font-colour: #676767;
+  --red-font-colour: #743129;
+  --brown-font-colour: #975b24;
+  --bg-colour: #f2efea;
+  --card-colour: #ffffff;
+
+  /* bike colour options */
+  --bike-colour-black: #231f20;
+  --bike-colour-cream: #f0ebd8;
+  --bike-colour-red: #ba131a;
+  --bike-colour-blue: #4a7094;
+  --bike-colour-green: #999f81;
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 3.5%;
+  background-color: var(--bg-colour);
+}
+
+/* nav */
+.logo-container img {
+  max-width: 25%;
+}
+
+.brands-menu p {
+  text-transform: uppercase;
+  color: var(--grey-font-colour);
+  letter-spacing: 2px;
+}
+
+.brands-menu a {
+  color: var(--red-font-colour);
+}
+
+/* product cards */
+.product-card {
+  background-color: var(--card-colour);
+  max-width: 70%;
+  padding: 3%;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.brand-name {
+  text-transform: uppercase;
+}
+
+.product-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: solid;
+  border-color: var(--grey-font-colour);
+  border-width: 1px;
+  font-weight: normal;
+}
+
+.product-info-table {
+  border: solid;
+  border-color: var(--bg-colour);
+  border-width: 2px;
+  padding: 3%;
+  font-style: italic;
+  margin-top: 2%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  border-bottom: solid;
+  border-color: var(--bg-colour);
+  border-width: 2px;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+.colours {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  border-bottom: solid;
+  border-color: var(--bg-colour);
+  border-width: 2px;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+.stock {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  border-bottom: solid;
+  border-color: var(--bg-colour);
+  border-width: 2px;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--card-colour);
+  color: var(--brown-font-colour);
+  border-color: var(--brown-font-colour);
+  border-width: 2px;
+  font-size: 130%;
+  text-transform: uppercase;
+}

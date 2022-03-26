@@ -25,7 +25,21 @@ body {
   background-color: var(--bg-colour);
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2%;
+}
+
 /* nav */
+nav {
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10%;
+}
+
 .logo-container img {
   max-width: 25%;
 }
@@ -53,6 +67,7 @@ body {
 
 .brand-name {
   text-transform: uppercase;
+  margin-top: 3%;
 }
 
 .product-name {
@@ -62,6 +77,7 @@ body {
   border-color: var(--grey-font-colour);
   border-width: 1px;
   font-weight: normal;
+  margin-top: 1%;
 }
 
 .product-info-table {
@@ -89,14 +105,50 @@ body {
 }
 
 .colours {
-  display: flex;
-  flex-direction: row;
-  gap: 3%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
   border-bottom: solid;
   border-color: var(--bg-colour);
   border-width: 2px;
   padding-bottom: 1.5%;
   padding-top: 1.5%;
+}
+
+.product-colours {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10%;
+  max-width: 70%;
+}
+
+.black {
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: var(--bike-colour-black);
+}
+
+.white {
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: var(--bike-colour-cream);
+}
+
+.red {
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: var(--bike-colour-red);
+}
+
+.blue {
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: var(--bike-colour-blue);
+}
+
+.green {
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: var(--bike-colour-green);
 }
 
 .stock {
@@ -124,4 +176,24 @@ button {
   border-width: 2px;
   font-size: 130%;
   text-transform: uppercase;
+}
+
+/* media queries */
+@media screen and (min-width: 601px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    /* grid-row-gap: 10%; */
+  }
 }
